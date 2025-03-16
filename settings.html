@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - User Hub</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/settings.css">
+</head>
+<body>
+  <div class="settings-container">
+    <h1><i class="fas fa-cog"></i> Settings</h1>
+
+    <!-- Profile Settings -->
+    <div class="settings-section">
+      <h2><i class="fas fa-user"></i> Profile Settings</h2>
+      <form>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="First Name" value="Mac" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Last Name" value="Shadow" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" value="macshadow@example.com" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-phone"></i>
+          <input type="tel" placeholder="Phone Number" value="+1234567890" required>
+        </div>
+        <button type="submit"><i class="fas fa-save"></i> Update Profile</button>
+      </form>
+    </div>
+
+    <!-- Security Settings -->
+    <div class="settings-section">
+      <h2><i class="fas fa-shield-alt"></i> Security</h2>
+      <form>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Current Password" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="New Password" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Confirm New Password" required>
+        </div>
+        <button type="submit"><i class="fas fa-key"></i> Change Password</button>
+      </form>
+    </div>
+
+    <!-- Notification Settings -->
+    <div class="settings-section">
+      <h2><i class="fas fa-bell"></i> Notifications</h2>
+      <form>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" checked>
+            <i class="fas fa-envelope"></i> Email Notifications
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" checked>
+            <i class="fas fa-mobile-alt"></i> SMS Notifications
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox">
+            <i class="fas fa-bell"></i> Push Notifications
+          </label>
+        </div>
+        <button type="submit"><i class="fas fa-save"></i> Save Preferences</button>
+      </form>
+    </div>
+
+    <!-- Preferences -->
+    <div class="settings-section">
+      <h2><i class="fas fa-palette"></i> Preferences</h2>
+      <form>
+        <div class="input-group">
+          <i class="fas fa-moon"></i>
+          <select id="theme">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-language"></i>
+          <select id="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+          </select>
+        </div>
+        <button type="submit"><i class="fas fa-save"></i> Save Preferences</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
