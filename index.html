@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac's User Hub Dashboard</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <h1 class="logo"><i class="fas fa-user-circle"></i>Mac's User Hub</h1>
+      </div>
+      <ul>
+        <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        <li>
+          <a href="login.html" class="login-btn">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </a>
+        </li>
+        <li>
+          <button class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+        <li><a href="#"><i class="fas fa-question-circle"></i> Help & Support</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Welcome Section -->
+      <div class="welcome-section">
+        <div class="welcome-left">
+          <h2>Welcome, Mac!</h2>
+          <p>Student | Web Designer | Developer</p>
+        </div>
+        <div class="welcome-right">
+          <div class="profile-pic"></div>
+        </div>
+      </div>
+
+      <!-- Dashboard Cards -->
+      <div class="dashboard-cards">
+        <div class="card card-1">
+          <i class="fas fa-users"></i>
+          <h3>Total Users Registered</h3>
+          <p>1200+ Members</p>
+        </div>
+        <div class="card card-2">
+          <i class="fas fa-envelope"></i>
+          <h3>Messages Received</h3>
+          <p>New Messages: 5</p>
+        </div>
+        <div class="card card-3">
+          <i class="fas fa-clock"></i>
+          <h3>Recent Activity</h3>
+          <p>Last Login: 2 hours ago</p>
+        </div>
+        <div class="card card-4">
+          <i class="fas fa-tasks"></i>
+          <h3>Account Completion</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+          <p>75% Complete</p>
+        </div>
+      </div>
+
+      <!-- Charts & Data Visualizations -->
+      <div class="charts-section">
+        <div class="card card-5">
+          <h2><i class="fas fa-chart-bar"></i> User Growth</h2>
+          <div class="bar-chart">
+            <div class="bar" style="height: 60%;"></div>
+            <div class="bar" style="height: 80%;"></div>
+            <div class="bar" style="height: 40%;"></div>
+            <div class="bar" style="height: 70%;"></div>
+            <div class="bar" style="height: 90%;"></div>
+          </div>
+        </div>
+        <div class="card card-6">
+          <h2><i class="fas fa-chart-line"></i> Activity Trends</h2>
+          <div class="line-chart"></div>
+        </div>
+        <div class="card card-7">
+          <h2><i class="fas fa-chart-pie"></i> Skill Progress</h2>
+          <div class="circular-progress">
+            <div class="circle" style="--progress: 60;"></div>
+            <p>HTML/CSS</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Notifications -->
+      <div class="notifications-section">
+        <div class="card card-8">
+          <h2><i class="fas fa-bell"></i> Recent Notifications</h2>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Your profile was updated successfully!</li>
+            <li><i class="fas fa-user-plus"></i> New friend request from Coach Haggai</li>
+            <li><i class="fas fa-lock"></i> Your password was changed on Feb 20</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="quick-actions">
+        <div class="card card-9">
+          <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+          <div class="actions">
+            <button><i class="fas fa-user-edit"></i> Update Profile</button>
+            <button><i class="fas fa-key"></i> Change Password</button>
+            <button><i class="fas fa-moon"></i> Dark Mode</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2025 Mac Dynamics. All rights reserved.</p>
+      <p>Contact: mac@Dynamics.com</p>
+    </footer>
+  </div>
+</body>
+</html>
